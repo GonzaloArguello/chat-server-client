@@ -16,13 +16,13 @@ sv.run();
 Client c = new Client("localhost", 9191);
 c.run();
 ```
-If you're using this locally, set the first argument (whhich decides the host it'll be connecting to) to "localhost" and the port number you gave the server to listen. If its through the internet, instead of "localhost" you'll have to specify the IP address of where the server is located.
+If you're using this locally, set the first argument (which decides the host it'll be connecting to) to "localhost" and the port number you gave the server to listen. If its through the internet, instead of "localhost" you'll have to specify the IP address of where the server is located.
 
 ## Español
 
 Un simple servidor de mensajeria/chat hecho en Java utilizando Sockets, influenciado por varios proyectos similares encontrados en internet. Este proyecto tambien contiene un cliente con interfaz gráfica para que el usuario pueda conectarse y usar el servicio mas facilmente, esto puede ser utilizado localmente en la red del usuario y, tambien, a traves de internet. Establecer la conección deseada es facil, y puede ser realizado de la siguiente manera:
 
-  1- Sea utilizado localmente o a travez de la web, lo primero es decidir en que puerto va a estar escuchando nuestro servidor y establecerlo en el método main() de la clase Server.java (cha-server-client/server-side/Server.java (lineas 43 a 47).
+  1- Sea utilizado localmente o a travez de la web, lo primero es decidir en que puerto va a estar escuchando nuestro servidor y establecerlo en el método main() de la clase chat-server-client/server-side/Server.java (lineas 43 a 47).
  ```	
 Server sv = new Server(9191); 
 sv.run();
