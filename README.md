@@ -20,9 +20,9 @@ If you're using this locally, set the first argument (which decides the host it'
 
 ## Español
 
-Un simple servidor de mensajeria/chat hecho en Java utilizando Sockets, influenciado por varios proyectos similares encontrados en internet. Este proyecto tambien contiene un cliente con interfaz gráfica para que el usuario pueda conectarse y usar el servicio mas facilmente, esto puede ser utilizado localmente en la red del usuario y, tambien, a traves de internet. Establecer la conección deseada es facil, y puede ser realizado de la siguiente manera:
+Un simple servidor de mensajería/chat hecho en Java utilizando Sockets, influenciado por varios proyectos similares encontrados en internet. Este proyecto también contiene un cliente con interfaz gráfica para que el usuario pueda conectarse y usar el servicio mas fácilmente, esto puede ser utilizado localmente en la red del usuario y, también, a través de internet. Establecer la conexión deseada es fácil, y puede ser realizado de la siguiente manera:
 
-  1- Sea utilizado localmente o a travez de la web, lo primero es decidir en que puerto va a estar escuchando nuestro servidor y establecerlo en el método main() de la clase chat-server-client/serverSide/Server.java (lineas 43 a 47).
+1- Sea utilizado localmente o a través de la web, lo primero es decidir en que puerto va a estar escuchando nuestro servidor y establecerlo en el método main() de la clase chat-server-client/serverSide/Server.java (lineas 43 a 47).
  ```	
 Server sv = new Server(9191); 
 sv.run();
@@ -34,4 +34,4 @@ Cuando una instancia de la clase Server es creada, el argumento que se pide es u
 Client c = new Client("localhost", 9191);
 c.run();
 ```
-Si estas utilizando el chat localmente, haz que el primer argumento (que decide el host al cual se intenta conectar) sea "localhost" y que el segundo argumento (que decide el puerto al que va a conectarse) sea el puerto que se designo al servidor en el paso 1. Si piensas usarlo a traves de internet, designa al primer argumento la dirección IP de donde se encuentre el servidor. 
+Si estas utilizando el chat localmente, haz que el primer argumento (que decide el host al cual se intenta conectar) sea "localhost" y que el segundo argumento (que decide el puerto al que va a conectarse) sea el puerto que se designo al servidor en el paso 1. Si piensas usarlo a través de internet, designa al primer argumento la dirección IP de donde se encuentre el servidor.
